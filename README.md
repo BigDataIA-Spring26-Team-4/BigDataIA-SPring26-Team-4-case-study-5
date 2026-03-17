@@ -15,7 +15,7 @@
 |----------|-----|
 | **Codelabs Document** | https://codelabs-preview.appspot.com/?file_id=1ZYVD62sCK0jvl3ffeBwXGa9qtkbn3vXAYPjzNQhwtow#0 |
 | **Video Presentation** | https://youtu.be/2NXjSDy71eM |
-| **Live Application** | _[Add Streamlit URL if deployed]_ |
+| **Live Application** | http://54.172.44.67:8501 |
 
 ---
 
