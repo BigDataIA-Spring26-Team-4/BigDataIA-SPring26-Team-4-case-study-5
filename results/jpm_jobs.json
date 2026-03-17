@@ -1,0 +1,517 @@
+[
+  {
+    "title": "Backend Software Engineer III - API Platform",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "spark",
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "title": "Training Associate",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Java Lead Software Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Fraud Prevention Data Scientist Lead",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer III - Python / Spark",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "spark"
+    ]
+  },
+  {
+    "title": "Lead Software Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Lead Software Engineer - Python Developer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Firmwide Economic Scenarios - Associate",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Lead Software Engineer Speech App Frontend - JavaScript, Typescript, AI",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "Wealth Management , Chief Investment Officer Portfolio Analytics Team, Vice President",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Applied AI/ML Assiociate",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Machine Learning Scientist - NLP - Senior Associate - Machine Learning Center of Excellence",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Applied AI ML Director Machine Learning Center of Excellence",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Applied AI/ML Researcher - Vice President",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Applied AI/ML - Vice President",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Machine Learning Engineer-MLOps",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Finance Expert AI Data operation",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Principal Applied AI ML Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "pytorch",
+      "tensorflow",
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "Risk Management - Data Scientist Associate",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "pytorch",
+      "tensorflow",
+      "langchain"
+    ]
+  },
+  {
+    "title": "Software Engineer III - AI/ML",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "pytorch",
+      "tensorflow",
+      "spark",
+      "kubernetes",
+      "docker",
+      "azure ml",
+      "langchain"
+    ]
+  },
+  {
+    "title": "Fraud Prevention Data Scientist - Vice President",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Vice President - AI Data Products",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Executive Director - AI Transformation Lead",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "pytorch",
+      "tensorflow"
+    ]
+  },
+  {
+    "title": "Senior Product Designer - Senior Associate",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Data Scientist [Multiple Positions Available]",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "AI Research Scientist-Sr. Associate",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "AWS Lead Software Engineer-Full Stack/Artificial Intelligence/Machine Learning",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "AI Research Scientist (AI Agents) - Senior Associate",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Cloud Infrastructure Engineer III",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "title": "Software Engineer III - Python Developer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Lead Software Eningeer - Java, Spring Boot, API, AWS",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "FircoSoft Application Developer - Software Engineer III",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "DevOps Software Engineer III",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "title": "Applied AI Engineer-Sr. Associate",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Applied AI Engineer-Vice President",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Sr. Machine Learning Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer III- Big Data / AI/ML / Python / React",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Applied AI ML Engineer-Sr. Associate",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Staff Developer Advocacy Engineer | US | Remote",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": [
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "Senior Solutions Engineer | Mid Atlantic or Southeast | Remote",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Solutions Engineer, Acquisition | IL, MI, OH, MN | Remote",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Solutions Engineer, Growth | Denver | Remote",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Product Marketing Manager | USA (EST, CST) | Remote",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Staff Software Engineer - Observability Knowledge Graph Backend | USA | Remote",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": [
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "Senior Observability Architect | USA PST| Remote",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": [
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "Solutions Engineer, Acquisition | California, Washington, Oregon | Remote",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Software Engineer - Grafana OSS Big Tent | US | Remote",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": [
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "title": "Manager, Foundation Observability Architects | USA | Remote",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": [
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "Database Software Engineer III (PL/SQL, Databricks)",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Lead Software Engineer -Java, Python, SQL",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": [
+      "python",
+      "spark",
+      "hadoop"
+    ]
+  },
+  {
+    "title": "Java / Spark / AWS Lead Software Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": [
+      "spark",
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "Software Engineer III - Big Data Pyspark, Java And AWS",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "spark"
+    ]
+  },
+  {
+    "title": "MDS Infrastructure Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Software Engineer III - Data / ETL Developer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer [Multiple Positions Available]",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer \u2013 Big Data & Analytics - Assoc",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Data Engineer III- Data Architecture",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer III - Java and Python",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Software Engineer III- Pyspark/Python",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": [
+      "python",
+      "spark"
+    ]
+  },
+  {
+    "title": "Software Engineer III - Infrastructure Platforms",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  }
+]

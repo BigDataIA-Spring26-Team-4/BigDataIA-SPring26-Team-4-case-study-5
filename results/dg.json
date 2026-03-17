@@ -1,0 +1,44 @@
+{
+  "ticker": "DG",
+  "sector": "retail",
+  "final_score": 46.74,
+  "vr_score": 39.28,
+  "hr_score": 67.22,
+  "synergy_score": 19.48,
+  "ci_lower": 43.8,
+  "ci_upper": 49.68,
+  "confidence": 0.99,
+  "talent_concentration": 0.3,
+  "position_factor": -0.2646,
+  "dimension_scores": {
+    "data_infrastructure": 29.61,
+    "ai_governance": 59.95,
+    "technology_stack": 39.03,
+    "talent": 38.04,
+    "leadership": 41.15,
+    "use_case_portfolio": 51.77,
+    "culture": 40.43
+  },
+  "evidence_count": 83,
+  "cv_penalty": 0.9362,
+  "talent_risk_adj": 0.9925,
+  "vr_contribution": 20.74,
+  "hr_contribution": 23.66,
+  "synergy_contribution": 2.34,
+  "document_count": 25,
+  "signal_count": 58,
+  "cs2_signals": {
+    "technology_hiring_score": 0.0,
+    "innovation_activity_score": 0.0,
+    "digital_presence_score": 22.5,
+    "leadership_signals_score": 48.22
+  },
+  "glassdoor_score": 38.04,
+  "board_score": 55.0,
+  "news_score": 15.0,
+  "sec_scores": {
+    "item_7": 23.0,
+    "item_1a": 77.92,
+    "item_1": 78.59
+  }
+}

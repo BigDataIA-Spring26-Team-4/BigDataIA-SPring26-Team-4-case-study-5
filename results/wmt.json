@@ -1,0 +1,44 @@
+{
+  "ticker": "WMT",
+  "sector": "retail",
+  "final_score": 57.45,
+  "vr_score": 52.49,
+  "hr_score": 73.51,
+  "synergy_score": 32.15,
+  "ci_lower": 54.51,
+  "ci_upper": 60.39,
+  "confidence": 0.99,
+  "talent_concentration": 0.2,
+  "position_factor": 0.3339,
+  "dimension_scores": {
+    "data_infrastructure": 81.54,
+    "ai_governance": 70.77,
+    "technology_stack": 75.15,
+    "talent": 5.91,
+    "leadership": 49.97,
+    "use_case_portfolio": 55.52,
+    "culture": 33.15
+  },
+  "evidence_count": 93,
+  "cv_penalty": 0.891,
+  "talent_risk_adj": 1.0,
+  "vr_contribution": 27.71,
+  "hr_contribution": 25.88,
+  "synergy_contribution": 3.86,
+  "document_count": 18,
+  "signal_count": 75,
+  "cs2_signals": {
+    "technology_hiring_score": 4.0,
+    "innovation_activity_score": 83.0,
+    "digital_presence_score": 100.0,
+    "leadership_signals_score": 53.3
+  },
+  "glassdoor_score": 32.85,
+  "board_score": 80.0,
+  "news_score": 32.6,
+  "sec_scores": {
+    "item_7": 41.0,
+    "item_1a": 62.5,
+    "item_1": 63.27
+  }
+}

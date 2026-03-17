@@ -1,0 +1,44 @@
+{
+  "ticker": "JPM",
+  "sector": "financial",
+  "final_score": 66.13,
+  "vr_score": 59.48,
+  "hr_score": 84.49,
+  "synergy_score": 41.52,
+  "ci_lower": 63.19,
+  "ci_upper": 69.07,
+  "confidence": 0.99,
+  "talent_concentration": 0.18,
+  "position_factor": 0.3738,
+  "dimension_scores": {
+    "data_infrastructure": 77.34,
+    "ai_governance": 59.49,
+    "technology_stack": 68.01,
+    "talent": 54.98,
+    "leadership": 55.04,
+    "use_case_portfolio": 46.55,
+    "culture": 46.2
+  },
+  "evidence_count": 112,
+  "cv_penalty": 0.957,
+  "talent_risk_adj": 1.0,
+  "vr_contribution": 31.41,
+  "hr_contribution": 29.74,
+  "synergy_contribution": 4.98,
+  "document_count": 25,
+  "signal_count": 87,
+  "cs2_signals": {
+    "technology_hiring_score": 56.0,
+    "innovation_activity_score": 55.0,
+    "digital_presence_score": 100.0,
+    "leadership_signals_score": 55.58
+  },
+  "glassdoor_score": 28.78,
+  "board_score": 75.0,
+  "news_score": 52.8,
+  "sec_scores": {
+    "item_7": 40.49,
+    "item_1a": 40.46,
+    "item_1": 40.36
+  }
+}

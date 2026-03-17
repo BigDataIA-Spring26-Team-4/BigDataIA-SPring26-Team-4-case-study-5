@@ -1,0 +1,446 @@
+[
+  {
+    "title": "Senior, Data Scientist",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "tensorflow",
+      "spark"
+    ]
+  },
+  {
+    "title": "Staff, Data Scientist",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "tensorflow",
+      "spark"
+    ]
+  },
+  {
+    "title": "Systems Operator / IT Coordinator, Manufacturing - $24.20/hr.",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Accountant",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Senior Manager, Merchandise Designer - Textiles & Floor Coverings",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Technician, General Facilities Maintenance \u2013 Journeyman Electrician",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Technician, General Facilities Maintenance \u2013 Journeyman Plumber",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior, Data Scientist - Walmart+ Engagement & Retention",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Sr. Manager, Analytics",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "AI Research, Intern",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Data Scientists, Conversational AI",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Senior Applied AI/ML Scientist - Search",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Staff, Data Scientist - Walmart Connect",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Director, DSP Supply & Marketplace Strategy",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "(USA) Senior Manager, Data Science",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "tensorflow",
+      "spark"
+    ]
+  },
+  {
+    "title": "Senior Director, Sales",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Senior Account Executive",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Sales Director",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Retail Media Data Account Manager",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Retail Media Account Director",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Product Manager for Data Science",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Director, Sales and Partnerships",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Display Account Manager",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "(USA) Staff, Software Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer II",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "(USA) Senior Manager, Technical Program Management",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer III",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Brand Manager",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior, Data Scientist - Walmart+ Acquisition and New Benefits",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "tensorflow",
+      "spark"
+    ]
+  },
+  {
+    "title": "Senior Data Scientist - Content",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "(USA) Senior, Data Scientist",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Distinguished, Data Scientist",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Senior AI Scientist",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "pytorch"
+    ]
+  },
+  {
+    "title": "Senior Incident Response Engineer (Purple Team)",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "(USA) Principal, Software Engineer, Information Security",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "pytorch",
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "title": "AI Integration Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "(USA) Senior, Software Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Senior Product Marketing Manager - Omnichannel",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior, Software Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer III - Machine Learning",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Senior, Software Engineer (Machine Learning)",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Senior, Software Engineer \u2013 Python, Gen AI Developer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Senior AI Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Machine Learning Engineer (LLM)",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Technical Lead",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Inbound Sales Strategist",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "VP of Engineering",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Software Engineer, Marketplace Experience",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Software Engineer, Marketplace Experience",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "AI Filmmaker / AI Production Pipeline Engineer",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Senior Roblox Developer",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Backend Software Engineer, CoreApp",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer III - eComm",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer III - Backend",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Back End Software Engineers",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior, Software Engineer (Backend)",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Pre-Sales Engineer - Atlanta",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": []
+  }
+]

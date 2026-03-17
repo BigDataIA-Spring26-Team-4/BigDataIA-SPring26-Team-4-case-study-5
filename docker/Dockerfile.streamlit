@@ -1,0 +1,30 @@
+# Dockerfile for Streamlit Dashboard
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y gcc && rm -rf /var/lib/apt/lists/*
+
+# Copy dependency file and install
+COPY requirements.txt ./
+RUN pip install -r requirements.txt && \
+    pip install streamlit plotly matplotlib pytest hypothesis
+
+# Copy application code
+COPY app/ /app/app/
+COPY streamlit_app.py /app/streamlit_app.py
+
+# Create directories for mounted volumes
+RUN mkdir -p /app/data /app/results /app/tests
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "streamlit_app.py", \
+     "--server.port=8501", \
+     "--server.address=0.0.0.0", \
+     "--server.headless=true", \
+     "--browser.gatherUsageStats=false"]

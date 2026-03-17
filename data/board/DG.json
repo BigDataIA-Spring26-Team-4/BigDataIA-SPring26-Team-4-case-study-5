@@ -1,0 +1,57 @@
+{
+  "ticker": "DG",
+  "members": [
+    {
+      "name": "Todd Vasos",
+      "title": "CEO",
+      "committees": [],
+      "bio": "Leading Dollar General's expansion strategy focused on store growth and cost management.",
+      "is_independent": false,
+      "tenure_years": 8
+    },
+    {
+      "name": "Michael Calbert",
+      "title": "Chairman",
+      "committees": ["Governance Committee"],
+      "bio": "Former KKR partner. Background in private equity and retail investment.",
+      "is_independent": true,
+      "tenure_years": 15
+    },
+    {
+      "name": "Sandra MacQuillan",
+      "title": "Director",
+      "committees": ["Audit Committee"],
+      "bio": "Former supply chain executive at Mondelez. Background in consumer packaged goods logistics.",
+      "is_independent": true,
+      "tenure_years": 3
+    },
+    {
+      "name": "William Rhodes III",
+      "title": "Director",
+      "committees": ["Compensation Committee", "Governance Committee"],
+      "bio": "Former CEO of AutoZone. Retail auto parts operations experience.",
+      "is_independent": true,
+      "tenure_years": 6
+    },
+    {
+      "name": "Ralph Alvarez",
+      "title": "Director",
+      "committees": ["Audit Committee"],
+      "bio": "Former COO of McDonald's. Experience in restaurant operations and franchising.",
+      "is_independent": true,
+      "tenure_years": 7
+    }
+  ],
+  "committees": [
+    "Audit Committee",
+    "Compensation Committee",
+    "Governance Committee"
+  ],
+  "executives": [
+    {"name": "Todd Vasos", "title": "CEO"},
+    {"name": "Kelly Dilts", "title": "CFO"},
+    {"name": "Tony Zuazo", "title": "SVP and Chief People Officer"},
+    {"name": "Emily Taylor", "title": "EVP and Chief Merchandising Officer"}
+  ],
+  "strategy_text": "Dollar General is focused on expanding store count and serving rural communities with affordable products. Our strategy emphasizes operational simplicity, cost management, and store-level execution."
+}

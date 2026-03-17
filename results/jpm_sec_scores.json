@@ -1,0 +1,47 @@
+{
+  "item_1": {
+    "section": "item_1",
+    "score": 25,
+    "keyword_counts": {
+      "strategy": 5,
+      "investment": 0,
+      "deployment": 0,
+      "talent": 0,
+      "governance": 0,
+      "total": 5
+    },
+    "total_mentions": 5,
+    "word_count": 12768,
+    "density_per_1k": 0.39
+  },
+  "item_1a": {
+    "section": "item_1a",
+    "score": 25,
+    "keyword_counts": {
+      "strategy": 5,
+      "investment": 0,
+      "deployment": 0,
+      "talent": 0,
+      "governance": 0,
+      "total": 5
+    },
+    "total_mentions": 5,
+    "word_count": 14664,
+    "density_per_1k": 0.34
+  },
+  "item_7": {
+    "section": "item_7",
+    "score": 25,
+    "keyword_counts": {
+      "strategy": 5,
+      "investment": 0,
+      "deployment": 0,
+      "talent": 0,
+      "governance": 0,
+      "total": 5
+    },
+    "total_mentions": 5,
+    "word_count": 14644,
+    "density_per_1k": 0.34
+  }
+}

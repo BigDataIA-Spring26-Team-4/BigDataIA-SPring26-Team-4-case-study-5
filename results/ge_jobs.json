@@ -1,0 +1,341 @@
+[
+  {
+    "title": "Producibility & Design for Manufacturing with AI Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Electrician (Licensed MA)",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Electronic Maintenance",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Military DoD SkillBridge Program - CNC Machinist",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Advanced CMC Maintenance (1st shift)",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "CNC Machinist Apprenticeship Program - 2nd shift",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Data Scientist \u2013 TechOps Predictive Engineering",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "pytorch",
+      "tensorflow"
+    ]
+  },
+  {
+    "title": "GE Aerospace Research - Material Informatics Fellow Internship",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Aerospace Tig Welder 3rd Shift",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "GE Aerospace Research - Probabilistic Design Fellow Internship",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Sr Staff Data Scientist",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "GE Aerospace Research 2026 Edison Rotational Program",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "GE Aerospace Research - 2026 Edison Program Internship",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Lead Research Scientist - AI & Computer Vision - Aerospace Research",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "GE Aerospace Research - Operations Research Fellow Internship",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Scientist - Metallurgy - Aerospace Research",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Technology Manager - Computational Modeling & Simulation",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Advanced Lead Engineer - Nondestructive Evaluation - Aerospace Research",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "pytorch",
+      "tensorflow"
+    ]
+  },
+  {
+    "title": "Senior Research Scientist \u2013 Composites - Aerospace Research",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Lead Engineer (Thin Film Instrumentation)",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Research Scientist-Ceramics - Aerospace Research",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Functional Consultant",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Research Scientist \u2013 Thermal Spray - Aerospace Research",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Associate  Scientist  \u2013 Metallography and Microanalysis  - Aerospace Research",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Quality Engineer (On-Site Only; 1st shift, Mon-Fri)",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Robotic Fabrication Lead",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Material Handler - Clean Line (3rd Shift, Mon-Fri)",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Facility Supervisor (1st shift, Mon-Fri)",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "GE Aerospace Research - Knowledge Discovery & High Assurance Systems Fellow Intern",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "pytorch",
+      "tensorflow",
+      "docker",
+      "langchain",
+      "openai"
+    ]
+  },
+  {
+    "title": "Staff Enterprise Application Engineer - Palantir",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": [
+      "python",
+      "spark"
+    ]
+  },
+  {
+    "title": "Advanced Lead Engineer - Preliminary Design Maintenance Cost",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Hardware Design Engineer (Power Electronics)",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Lead Preliminary Cycle Design & Methods Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Industrial Process Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Sub-Section Manager - Electrical Software & Systems",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Data Systems Advanced Lead Engineer Specialist",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Lifecycle Operations Analyst",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Lead Engineer \u2013 Testing Specialist - Mechanical Design, Signal Transmission",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Lead Manufacturing Engineer 2",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Lead Development Quality Assurance (DQA) Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Military Engine Test Engineer Specialist and Flight Test Engineer Specialist",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "AEDC Test Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Lead Test Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "CAM Engineer - PCB Manufacturing",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Sr Staff Software Engineer",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": [
+      "python"
+    ]
+  }
+]

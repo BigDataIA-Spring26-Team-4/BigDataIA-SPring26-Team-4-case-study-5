@@ -1,0 +1,252 @@
+# ===========================================================================
+# Docker Compose for PE Org-AI-R Platform
+# Services: API, Streamlit, Redis, PostgreSQL (Airflow), Airflow
+# Run from any directory — all services load secrets from ../.env (project root)
+# ===========================================================================
+
+x-airflow-common: &airflow-common
+  image: apache/airflow:2.8.1-python3.11
+  environment: &airflow-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'false'
+    AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'true'
+    AIRFLOW__WEBSERVER__RBAC: 'false'
+    _PIP_ADDITIONAL_REQUIREMENTS: 'requests'
+  volumes:
+    - ../airflow/dags:/opt/airflow/dags
+    - airflow_logs:/opt/airflow/logs
+  depends_on:
+    postgres:
+      condition: service_healthy
+    api:
+      condition: service_started
+    cs4-rag-api:
+      condition: service_started
+  networks:
+    - pe-org-air-network
+
+services:
+  # ════════════════════════════════════════════════════════════════
+  # FastAPI Application
+  # ════════════════════════════════════════════════════════════════
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: pe-org-air-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - ../.env
+    environment:
+      # Snowflake defaults (override via .env if needed)
+      SNOWFLAKE_DATABASE: ${SNOWFLAKE_DATABASE:-PE_ORG_AIR_DB}
+      SNOWFLAKE_SCHEMA: ${SNOWFLAKE_SCHEMA:-PE_ORG_AIR_SCHEMA}
+      SNOWFLAKE_WAREHOUSE: ${SNOWFLAKE_WAREHOUSE:-PE_ORG_AIR_WH}
+      SNOWFLAKE_ROLE: ${SNOWFLAKE_ROLE:-ACCOUNTADMIN}
+      # Redis (Docker service name)
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_DB: 0
+      REDIS_ENABLED: "true"
+      # S3 defaults
+      S3_ENABLED: ${S3_ENABLED:-false}
+      # SEC EDGAR defaults
+      SEC_EDGAR_EMAIL: ${SEC_EDGAR_EMAIL:-prajapati.dee@northeastern.edu}
+      SEC_EDGAR_COMPANY_NAME: ${SEC_EDGAR_COMPANY_NAME:-PE-OrgAIR-Platform}
+      # App
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      DEBUG: ${DEBUG:-false}
+    volumes:
+      - ../data:/app/data
+      - ../results:/app/results
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - pe-org-air-network
+
+  # ════════════════════════════════════════════════════════════════
+  # CS4 RAG & Search API
+  # ════════════════════════════════════════════════════════════════
+  cs4-rag-api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.cs4
+    container_name: pe-org-air-cs4-rag
+    ports:
+      - "8003:8003"
+    env_file:
+      - ../.env
+    environment:
+      # CS4 connects to CS1/CS2/CS3 via the api service
+      CS4_CS3_API_URL: "http://api:8000"
+      # Retrieval tuning defaults
+      CS4_DAILY_BUDGET_USD: ${CS4_DAILY_BUDGET_USD:-50.0}
+      CS4_DENSE_WEIGHT: ${CS4_DENSE_WEIGHT:-0.6}
+      CS4_BM25_WEIGHT: ${CS4_BM25_WEIGHT:-0.4}
+      CS4_RRF_K: ${CS4_RRF_K:-60}
+      CS4_EMBEDDING_MODEL: ${CS4_EMBEDDING_MODEL:-all-MiniLM-L6-v2}
+      CS4_CHROMA_PERSIST_DIR: /app/chroma_data
+    volumes:
+      - chroma_data:/app/chroma_data
+      - ../results:/app/results
+      - ../data:/app/data
+    depends_on:
+      - api
+    restart: unless-stopped
+    networks:
+      - pe-org-air-network
+
+  # ════════════════════════════════════════════════════════════════
+  # Streamlit Dashboard
+  # ════════════════════════════════════════════════════════════════
+  streamlit:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.streamlit
+    container_name: pe-org-air-streamlit
+    ports:
+      - "8501:8501"
+    env_file:
+      - ../.env
+    environment:
+      API_BASE: "http://api:8000"
+      CS4_API_BASE: "http://cs4-rag-api:8003"
+      # Snowflake defaults
+      SNOWFLAKE_DATABASE: ${SNOWFLAKE_DATABASE:-PE_ORG_AIR_DB}
+      SNOWFLAKE_SCHEMA: ${SNOWFLAKE_SCHEMA:-PE_ORG_AIR_SCHEMA}
+      SNOWFLAKE_WAREHOUSE: ${SNOWFLAKE_WAREHOUSE:-PE_ORG_AIR_WH}
+      SNOWFLAKE_ROLE: ${SNOWFLAKE_ROLE:-ACCOUNTADMIN}
+      # Redis
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_ENABLED: "true"
+    volumes:
+      - ../results:/app/results
+      - ../data:/app/data
+      - ../tests:/app/tests
+    depends_on:
+      - api
+    restart: unless-stopped
+    networks:
+      - pe-org-air-network
+
+  # ════════════════════════════════════════════════════════════════
+  # Redis Cache
+  # ════════════════════════════════════════════════════════════════
+  redis:
+    image: redis:7-alpine
+    container_name: pe-org-air-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    restart: unless-stopped
+    networks:
+      - pe-org-air-network
+
+  # ════════════════════════════════════════════════════════════════
+  # PostgreSQL (Airflow metadata database)
+  # ════════════════════════════════════════════════════════════════
+  postgres:
+    image: postgres:15-alpine
+    container_name: pe-org-air-postgres
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+    networks:
+      - pe-org-air-network
+
+  # ════════════════════════════════════════════════════════════════
+  # Airflow Init (one-time setup)
+  # ════════════════════════════════════════════════════════════════
+  airflow-init:
+    <<: *airflow-common
+    container_name: pe-org-air-airflow-init
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db init
+        airflow users create \
+          --username admin \
+          --password admin \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@example.com || true
+        echo "Airflow init complete"
+    restart: "no"
+
+  # ════════════════════════════════════════════════════════════════
+  # Airflow Webserver (UI at port 8080)
+  # ════════════════════════════════════════════════════════════════
+  airflow-webserver:
+    <<: *airflow-common
+    container_name: pe-org-air-airflow-webserver
+    command: airflow webserver --port 8080
+    ports:
+      - "8080:8080"
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  # ════════════════════════════════════════════════════════════════
+  # Airflow Scheduler
+  # ════════════════════════════════════════════════════════════════
+  airflow-scheduler:
+    <<: *airflow-common
+    container_name: pe-org-air-airflow-scheduler
+    command: airflow scheduler
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+# ════════════════════════════════════════════════════════════════
+# Networks & Volumes
+# ════════════════════════════════════════════════════════════════
+networks:
+  pe-org-air-network:
+    driver: bridge
+
+volumes:
+  redis_data:
+    driver: local
+  postgres_data:
+    driver: local
+  airflow_logs:
+    driver: local
+  chroma_data:
+    driver: local

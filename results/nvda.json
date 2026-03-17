@@ -1,0 +1,44 @@
+{
+  "ticker": "NVDA",
+  "sector": "technology",
+  "final_score": 78.91,
+  "vr_score": 74.55,
+  "hr_score": 91.46,
+  "synergy_score": 61.24,
+  "ci_lower": 75.97,
+  "ci_upper": 81.85,
+  "confidence": 0.99,
+  "talent_concentration": 0.12,
+  "position_factor": 0.5066,
+  "dimension_scores": {
+    "data_infrastructure": 93.69,
+    "ai_governance": 75.49,
+    "technology_stack": 92.99,
+    "talent": 69.16,
+    "leadership": 56.5,
+    "use_case_portfolio": 76.26,
+    "culture": 42.4
+  },
+  "evidence_count": 98,
+  "cv_penalty": 0.9528,
+  "talent_risk_adj": 1.0,
+  "vr_contribution": 39.36,
+  "hr_contribution": 32.19,
+  "synergy_contribution": 7.35,
+  "document_count": 25,
+  "signal_count": 73,
+  "cs2_signals": {
+    "technology_hiring_score": 70.6,
+    "innovation_activity_score": 100.0,
+    "digital_presence_score": 100.0,
+    "leadership_signals_score": 51.05
+  },
+  "glassdoor_score": 28.3,
+  "board_score": 75.0,
+  "news_score": 36.3,
+  "sec_scores": {
+    "item_7": 72.13,
+    "item_1a": 83.11,
+    "item_1": 84.08
+  }
+}

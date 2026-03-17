@@ -1,0 +1,64 @@
+[
+  {
+    "title": "SOLUTION ARCHITECT",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Press Assistant THURSDAY thru SUNDAY",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Press Assistant NIGHT SHIFT",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "DATA SCIENTIST",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "spark"
+    ]
+  },
+  {
+    "title": "Decision Science Analyst Senior",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Senior Implementation Manager",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "LEAD SOFTWARE ENGINEER",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "DIGITAL SOLUTIONS SR MANAGER",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": [
+      "kubernetes",
+      "docker"
+    ]
+  }
+]

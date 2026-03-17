@@ -1,0 +1,67 @@
+{
+  "ticker": "JPM",
+  "members": [
+    {
+      "name": "Jamie Dimon",
+      "title": "Chairman and CEO",
+      "committees": [],
+      "bio": "Leading JPMorgan Chase with focus on technology investment exceeding $15B annually. Champions AI and data science across the firm.",
+      "is_independent": false,
+      "tenure_years": 19
+    },
+    {
+      "name": "Linda Bammann",
+      "title": "Director",
+      "committees": ["Risk Committee", "Public Responsibility Committee"],
+      "bio": "Former Deputy Head of Risk Management. Expertise in risk analytics and quantitative modeling.",
+      "is_independent": true,
+      "tenure_years": 11
+    },
+    {
+      "name": "Todd Combs",
+      "title": "Director",
+      "committees": ["Compensation Committee"],
+      "bio": "Investment manager at Berkshire Hathaway. Background in financial technology and analytics.",
+      "is_independent": true,
+      "tenure_years": 5
+    },
+    {
+      "name": "Virginia Rometty",
+      "title": "Director",
+      "committees": ["Risk Committee"],
+      "bio": "Former CEO of IBM. Deep expertise in artificial intelligence, cloud computing, and digital transformation. Led IBM's Watson AI strategy.",
+      "is_independent": true,
+      "tenure_years": 3
+    },
+    {
+      "name": "Phebe Novakovic",
+      "title": "Director",
+      "committees": ["Audit Committee", "Compensation Committee"],
+      "bio": "CEO of General Dynamics. Experience in defense technology and cybersecurity.",
+      "is_independent": true,
+      "tenure_years": 8
+    },
+    {
+      "name": "Tim Chen",
+      "title": "Director",
+      "committees": ["Risk Committee", "Technology Committee"],
+      "bio": "CEO of DiversyFund. Background in financial technology, data analytics and machine learning applications in fintech.",
+      "is_independent": true,
+      "tenure_years": 2
+    }
+  ],
+  "committees": [
+    "Audit Committee",
+    "Compensation Committee",
+    "Risk Committee",
+    "Public Responsibility Committee",
+    "Technology Committee"
+  ],
+  "executives": [
+    {"name": "Jamie Dimon", "title": "Chairman and CEO"},
+    {"name": "Daniel Pinto", "title": "President and COO"},
+    {"name": "Lori Beer", "title": "Global CTO"},
+    {"name": "Teresa Heitsenrether", "title": "Chief Data and Analytics Officer"}
+  ],
+  "strategy_text": "JPMorgan Chase continues to invest over $15 billion annually in technology. AI and machine learning are strategic priorities across risk management, fraud detection, and customer experience. The firm has deployed AI in production across multiple business lines."
+}

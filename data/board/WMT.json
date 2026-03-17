@@ -1,0 +1,67 @@
+{
+  "ticker": "WMT",
+  "members": [
+    {
+      "name": "Greg Penner",
+      "title": "Chairman",
+      "committees": [],
+      "bio": "Chairman of Walmart. Background in technology investment through Madrone Capital Partners. Focus on digital commerce strategy.",
+      "is_independent": false,
+      "tenure_years": 16
+    },
+    {
+      "name": "Doug McMillon",
+      "title": "CEO",
+      "committees": [],
+      "bio": "Leading Walmart's digital transformation and technology investment strategy including AI and automation in supply chain.",
+      "is_independent": false,
+      "tenure_years": 12
+    },
+    {
+      "name": "Sarah Friar",
+      "title": "Director",
+      "committees": ["Audit Committee", "Technology and eCommerce Committee"],
+      "bio": "CEO of Nextdoor. Former CFO of Square. Expertise in digital platforms, data analytics and fintech.",
+      "is_independent": true,
+      "tenure_years": 3
+    },
+    {
+      "name": "Cesar Conde",
+      "title": "Director",
+      "committees": ["Compensation Committee", "Technology and eCommerce Committee"],
+      "bio": "Chairman of NBCUniversal News Group. Experience in media technology and digital transformation.",
+      "is_independent": true,
+      "tenure_years": 6
+    },
+    {
+      "name": "Tim Flynn",
+      "title": "Director",
+      "committees": ["Audit Committee", "Risk Committee"],
+      "bio": "Former Chairman of KPMG. Expertise in governance, risk management and compliance.",
+      "is_independent": true,
+      "tenure_years": 9
+    },
+    {
+      "name": "Randall Stephenson",
+      "title": "Director",
+      "committees": ["Technology and eCommerce Committee"],
+      "bio": "Former CEO of AT&T. Deep expertise in telecommunications technology and digital infrastructure.",
+      "is_independent": true,
+      "tenure_years": 4
+    }
+  ],
+  "committees": [
+    "Audit Committee",
+    "Compensation Committee",
+    "Nominating Committee",
+    "Risk Committee",
+    "Technology and eCommerce Committee"
+  ],
+  "executives": [
+    {"name": "Doug McMillon", "title": "CEO"},
+    {"name": "John David Rainey", "title": "CFO"},
+    {"name": "Suresh Kumar", "title": "Global CTO and Chief Digital Officer"},
+    {"name": "Donna Morris", "title": "Chief People Officer"}
+  ],
+  "strategy_text": "Walmart is accelerating AI adoption across supply chain optimization, inventory management, and customer experience. AI and machine learning are embedded in our strategic priorities to drive efficiency and competitive advantage in retail."
+}

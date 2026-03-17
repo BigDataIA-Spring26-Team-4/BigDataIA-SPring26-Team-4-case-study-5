@@ -1,0 +1,66 @@
+{
+  "ticker": "NVDA",
+  "members": [
+    {
+      "name": "Jensen Huang",
+      "title": "CEO and Founder",
+      "committees": [],
+      "bio": "Co-founded NVIDIA. Leading the company's artificial intelligence and deep learning strategy. Pioneer in GPU computing and AI acceleration.",
+      "is_independent": false,
+      "tenure_years": 31
+    },
+    {
+      "name": "Mark Stevens",
+      "title": "Lead Independent Director",
+      "committees": ["Audit Committee", "Technology and Cybersecurity Committee"],
+      "bio": "Partner at S-Cubed Capital. Extensive experience in technology ventures and digital transformation strategy.",
+      "is_independent": true,
+      "tenure_years": 16
+    },
+    {
+      "name": "Tench Coxe",
+      "title": "Director",
+      "committees": ["Compensation Committee", "Technology and Cybersecurity Committee"],
+      "bio": "Managing Director at Sutter Hill Ventures. Expertise in data science, analytics and AI investments.",
+      "is_independent": true,
+      "tenure_years": 20
+    },
+    {
+      "name": "Dawn Hudson",
+      "title": "Director",
+      "committees": ["Audit Committee", "Compensation Committee"],
+      "bio": "Former CMO at NFL. Experience in digital strategy and data-driven marketing.",
+      "is_independent": true,
+      "tenure_years": 7
+    },
+    {
+      "name": "Harvey Jones",
+      "title": "Director",
+      "committees": ["Audit Committee", "Nominating Committee"],
+      "bio": "Former CEO of Synopsys. Background in semiconductor design and machine learning hardware.",
+      "is_independent": true,
+      "tenure_years": 12
+    },
+    {
+      "name": "Michael McCaffery",
+      "title": "Director",
+      "committees": ["Nominating Committee"],
+      "bio": "CEO of Makena Capital Management. Experience with technology-focused investment strategies.",
+      "is_independent": true,
+      "tenure_years": 8
+    }
+  ],
+  "committees": [
+    "Audit Committee",
+    "Compensation Committee",
+    "Nominating Committee",
+    "Technology and Cybersecurity Committee"
+  ],
+  "executives": [
+    {"name": "Jensen Huang", "title": "CEO"},
+    {"name": "Colette Kress", "title": "CFO"},
+    {"name": "Debora Shoquist", "title": "EVP Operations"},
+    {"name": "Timothy Teter", "title": "General Counsel"}
+  ],
+  "strategy_text": "NVIDIA is the world leader in artificial intelligence computing. AI is central to our long-term strategy across data center, automotive, and edge computing. We continue to invest heavily in AI research and deep learning capabilities."
+}

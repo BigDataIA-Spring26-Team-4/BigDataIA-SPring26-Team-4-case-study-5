@@ -1,0 +1,57 @@
+{
+  "ticker": "GE",
+  "members": [
+    {
+      "name": "H. Lawrence Culp Jr.",
+      "title": "Chairman and CEO",
+      "committees": [],
+      "bio": "Leading GE's industrial transformation. Focus on operational efficiency and lean manufacturing practices.",
+      "is_independent": false,
+      "tenure_years": 6
+    },
+    {
+      "name": "Paula Rosput Reynolds",
+      "title": "Lead Independent Director",
+      "committees": ["Audit Committee", "Governance Committee"],
+      "bio": "Former CEO of AGL Resources. Experience in utility operations and energy technology.",
+      "is_independent": true,
+      "tenure_years": 5
+    },
+    {
+      "name": "Thomas Horton",
+      "title": "Director",
+      "committees": ["Compensation Committee", "Governance Committee"],
+      "bio": "Former CEO of American Airlines. Background in aviation operations management.",
+      "is_independent": true,
+      "tenure_years": 7
+    },
+    {
+      "name": "Catherine Lesjak",
+      "title": "Director",
+      "committees": ["Audit Committee"],
+      "bio": "Former CFO of HP Inc. Experience in technology company finance and digital transformation initiatives.",
+      "is_independent": true,
+      "tenure_years": 4
+    },
+    {
+      "name": "James Mulva",
+      "title": "Director",
+      "committees": ["Compensation Committee"],
+      "bio": "Former CEO of ConocoPhillips. Background in energy sector operations.",
+      "is_independent": true,
+      "tenure_years": 8
+    }
+  ],
+  "committees": [
+    "Audit Committee",
+    "Compensation Committee",
+    "Governance Committee"
+  ],
+  "executives": [
+    {"name": "H. Lawrence Culp Jr.", "title": "Chairman and CEO"},
+    {"name": "Carolina Dybeck Happe", "title": "CFO"},
+    {"name": "Scott Strazik", "title": "CEO of GE Vernova"},
+    {"name": "Peter Arduini", "title": "CEO of GE HealthCare"}
+  ],
+  "strategy_text": "GE is focused on lean manufacturing and operational excellence across its aerospace and energy businesses. Technology investment is directed at industrial IoT and digital twin capabilities to improve operational efficiency."
+}

@@ -1,0 +1,104 @@
+[tool.poetry]
+name = "pe-org-air-platform"
+version = "1.0.0"
+description = "PE Org-AI-R Platform - AI-Readiness Assessment for Private Equity Portfolio Companies"
+authors = ["Deep Prajapati <your.email@northeastern.edu>"]
+readme = "README.md"
+packages = [{include = "app"}, {include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+# Core Framework
+fastapi = "^0.115.5"
+uvicorn = {extras = ["standard"], version = "^0.34.0"}
+pydantic = "^2.10.3"
+pydantic-settings = "^2.6.1"
+
+# Database
+snowflake-sqlalchemy = "^1.7.3"
+snowflake-connector-python = "^3.12.3"
+sqlalchemy = "^2.0.36"
+
+# Caching
+redis = "^5.2.1"
+
+# AWS / Cloud Storage (optional for now)
+boto3 = "^1.35.78"
+
+# Environment & Configuration
+python-dotenv = "^1.0.1"
+
+# Logging
+structlog = "^24.4.0"
+
+# HTTP Client
+httpx = "^0.28.1"
+
+# Utilities
+python-multipart = "^0.0.20"
+
+# Dashboard
+streamlit = "^1.40.0"
+
+# CS2: Evidence Collection
+sec-edgar-downloader = "^5.0.0"
+pdfplumber = "^0.11.0"
+beautifulsoup4 = "^4.12.0"
+rapidfuzz = "^3.10.0"
+python-jobspy = "^1.1.0"
+matplotlib = "^3.10.8"
+plotly = "^6.5.2"
+
+# CS4: RAG & Search
+litellm = "^1.30.0"
+chromadb = "^1.5.0"
+sentence-transformers = "^2.2.0"
+rank-bm25 = "^0.2.0"
+sse-starlette = "^1.6.0"
+
+[tool.poetry.group.dev.dependencies]
+# Testing
+pytest = "^8.3.5"
+pytest-asyncio = "^0.24.0"
+pytest-cov = "^6.0.0"
+hypothesis = "^6.100.0"
+
+# Code Quality
+black = "^24.10.0"
+ruff = "^0.8.4"
+mypy = "^1.13.0"
+
+# Development Tools
+ipython = "^8.31.0"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+include = '\.pyi?$'
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --cov=src --cov-report=term-missing"
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
+
+# Note: For Poetry 2.0, use 'poetry run' commands instead:
+# poetry run uvicorn app.main:app --reload
+# poetry run pytest
+# poetry run black app/ tests/
+# poetry run ruff check app/ tests/
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

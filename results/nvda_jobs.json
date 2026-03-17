@@ -1,0 +1,479 @@
+[
+  {
+    "title": "Identity AI / ML Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Physical AI Senior Manager",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Network Engineer, Enterprise Infrastructure",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Sr. Software Development Engineer, FAR (Frontier AI & Robotics)",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Sr. Engineer, Machine Learning",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "AI/ML internship",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Sr. Machine Learning Engineer (Perception and Tracking)",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "AIML - Machine Learning Engineer, Foundation Models",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "AIML- Machine Learning Engineer, Machine Learning Platform Technologies",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Computer Vision/ML Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Machine Learning Engineer, Perception R&D",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Lead Robotics Software Engineer, Behavior Planning",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Senior Data Engineer",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "spark"
+    ]
+  },
+  {
+    "title": "Senior ML/AI Architect",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "kubernetes",
+      "azure ml",
+      "langchain",
+      "openai"
+    ]
+  },
+  {
+    "title": "Staff Software Engineer, ML Performance Optimization",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "pytorch"
+    ]
+  },
+  {
+    "title": "Senior Machine Learning Engineer",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "pytorch",
+      "tensorflow",
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "title": "Senior Software Developer - Full Stack",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "docker",
+      "aws sagemaker"
+    ]
+  },
+  {
+    "title": "Amazon Connect SME",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python"
+    ]
+  },
+  {
+    "title": "Machine Learning Infrastructure Engineers",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "tensorflow",
+      "spark",
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "GENAI/ML Engineer",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "pytorch",
+      "tensorflow",
+      "langchain",
+      "openai"
+    ]
+  },
+  {
+    "title": "Software Engineer Informatics & Machine Learning",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Principal Software Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "spark",
+      "hadoop"
+    ]
+  },
+  {
+    "title": "Software Development Engineer, Frontier AI & Robotics",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Machine Learning Engineer - Infra",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Site Reliability Engineer, AI/ML Infrastructure",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "AI/ML Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Senior Software Engineer, Networking",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "spark"
+    ]
+  },
+  {
+    "title": "Senior Software Engineer, Map Tooling - Autonomous Vehicles",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Senior Full Stack Engineer - Autonomous Vehicles",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": [
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "title": "Senior Mapping Engineer - Autonomous Vehicles",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "title": "Senior Data Backend Engineer",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "spark",
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "System Software Engineer, Distributed Systems",
+    "company": "",
+    "source": "indeed",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "AI Infrastructure Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "AI Engineer Intern - AI/ML/GenAI Design & Development",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Early Career AI/ML Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "AI Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Founding ML Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": true,
+    "skills": []
+  },
+  {
+    "title": "Principal Architect \u2013 HPC & AI (NVidia Ecosystem)",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": [
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "Principal Software Engineer (AI/Full-Stack) - Remote, Part-time/Full-Time",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "docker"
+    ]
+  },
+  {
+    "title": "Senior Solutions Architect, AI Infrastructure",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "title": "AI Solutions Engineer - GES West",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "pytorch",
+      "tensorflow",
+      "kubernetes",
+      "docker",
+      "langchain"
+    ]
+  },
+  {
+    "title": "Senior AI Engineer, AI Services",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "langchain"
+    ]
+  },
+  {
+    "title": "Infrastructure Engineer (Hybrid Cloud & Platform)",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": false,
+    "skills": [
+      "python",
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "title": "Senior AI Infrastructure Engineer",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "title": "GENAI / MACHINE LEARNING AI / DATA Scientist",
+    "company": "",
+    "source": "glassdoor",
+    "is_ai": true,
+    "skills": [
+      "python",
+      "pytorch",
+      "tensorflow",
+      "langchain",
+      "openai"
+    ]
+  },
+  {
+    "title": "Sr Software Engineer - BIOS, AWS Hardware Engineering, Firmware Development",
+    "company": "",
+    "source": "indeed",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer - New Grad",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer, Intern",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer, New Grad",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer (Backend)",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineering, New Grad",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer, Web",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  },
+  {
+    "title": "Software Engineer, Onboard Systems",
+    "company": "",
+    "source": "linkedin",
+    "is_ai": false,
+    "skills": []
+  }
+]
