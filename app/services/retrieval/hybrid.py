@@ -20,8 +20,8 @@ from typing import Any, Dict, List, Optional
 
 import structlog
 
-from src.config import CS4Settings, get_cs4_settings
-from src.services.search.vector_store import SearchResult, VectorStore
+from app.config import CS4Settings, get_cs4_settings
+from app.services.search.vector_store import SearchResult, VectorStore
 
 logger = structlog.get_logger()
 
@@ -182,7 +182,7 @@ class HybridRetriever:
         hyde_used = False
         try:
             if self._hyde is None:
-                from src.services.retrieval.hyde import HyDEEnhancer
+                from app.services.retrieval.hyde import HyDEEnhancer
                 self._hyde = HyDEEnhancer(settings=self._settings)
 
             hyde_text = await self._hyde.generate_hypothetical_document(query)

@@ -17,7 +17,7 @@ from typing import Any, AsyncIterator, Dict, List
 
 import structlog
 
-from src.config import CS4Settings, get_cs4_settings
+from app.config import CS4Settings, get_cs4_settings
 
 logger = structlog.get_logger()
 

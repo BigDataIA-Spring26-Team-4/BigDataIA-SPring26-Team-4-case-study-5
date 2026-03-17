@@ -23,8 +23,6 @@ x-airflow-common: &airflow-common
       condition: service_healthy
     api:
       condition: service_started
-    cs4-rag-api:
-      condition: service_started
   networks:
     - pe-org-air-network
 
@@ -60,31 +58,6 @@ services:
       # App
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
       DEBUG: ${DEBUG:-false}
-    volumes:
-      - ../data:/app/data
-      - ../results:/app/results
-    depends_on:
-      redis:
-        condition: service_healthy
-    restart: unless-stopped
-    networks:
-      - pe-org-air-network
-
-  # ════════════════════════════════════════════════════════════════
-  # CS4 RAG & Search API
-  # ════════════════════════════════════════════════════════════════
-  cs4-rag-api:
-    build:
-      context: ..
-      dockerfile: docker/Dockerfile.cs4
-    container_name: pe-org-air-cs4-rag
-    ports:
-      - "8003:8003"
-    env_file:
-      - ../.env
-    environment:
-      # CS4 connects to CS1/CS2/CS3 via the api service
-      CS4_CS3_API_URL: "http://api:8000"
       # Retrieval tuning defaults
       CS4_DAILY_BUDGET_USD: ${CS4_DAILY_BUDGET_USD:-50.0}
       CS4_DENSE_WEIGHT: ${CS4_DENSE_WEIGHT:-0.6}
@@ -93,11 +66,12 @@ services:
       CS4_EMBEDDING_MODEL: ${CS4_EMBEDDING_MODEL:-all-MiniLM-L6-v2}
       CS4_CHROMA_PERSIST_DIR: /app/chroma_data
     volumes:
-      - chroma_data:/app/chroma_data
-      - ../results:/app/results
       - ../data:/app/data
+      - ../results:/app/results
+      - chroma_data:/app/chroma_data
     depends_on:
-      - api
+      redis:
+        condition: service_healthy
     restart: unless-stopped
     networks:
       - pe-org-air-network
@@ -116,7 +90,6 @@ services:
       - ../.env
     environment:
       API_BASE: "http://api:8000"
-      CS4_API_BASE: "http://cs4-rag-api:8003"
       # Snowflake defaults
       SNOWFLAKE_DATABASE: ${SNOWFLAKE_DATABASE:-PE_ORG_AIR_DB}
       SNOWFLAKE_SCHEMA: ${SNOWFLAKE_SCHEMA:-PE_ORG_AIR_SCHEMA}
