@@ -13,8 +13,8 @@ talent, 20% to technology_stack, and 10% to culture.
 
 from typing import Dict
 
-from src.services.integration.cs2_client import SignalCategory, SourceType
-from src.services.integration.cs3_client import Dimension
+from app.services.integration.cs2_client import SignalCategory, SourceType
+from app.services.integration.cs3_client import Dimension
 
 
 # ============================================================================

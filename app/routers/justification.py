@@ -17,7 +17,7 @@ import structlog
 from fastapi import APIRouter, HTTPException, Query, Request
 from pydantic import BaseModel, Field
 
-from src.services.integration.cs3_client import Dimension
+from app.services.integration.cs3_client import Dimension
 
 logger = structlog.get_logger()
 router = APIRouter(prefix="/api/v1", tags=["justification"])

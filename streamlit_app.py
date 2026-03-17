@@ -191,7 +191,7 @@ def get_current_signal_weights() -> dict:
 
 # ── CS4 RAG API Helpers ────────────────────────────────────
 
-CS4_API_BASE = os.environ.get("CS4_API_BASE", "http://localhost:8003")
+CS4_API_BASE = API_BASE  # CS4 routes now served from the same app
 
 
 def cs4_api_available() -> bool:
@@ -219,7 +219,7 @@ def cs4_get(path: str, params: dict = None, timeout: int = 60):
     except requests.exceptions.Timeout:
         return {"error": f"Request timed out after {timeout}s", "endpoint": path}
     except requests.exceptions.ConnectionError:
-        return {"error": "CS4 API unreachable — is it running on port 8003?", "endpoint": path}
+        return {"error": "API unreachable — is the server running?", "endpoint": path}
     except Exception as e:
         return {"error": str(e), "endpoint": path}
 
@@ -239,7 +239,7 @@ def cs4_post(path: str, json_body: dict = None, timeout: int = 300):
     except requests.exceptions.Timeout:
         return {"error": f"Request timed out after {timeout}s", "endpoint": path}
     except requests.exceptions.ConnectionError:
-        return {"error": "CS4 API unreachable — is it running on port 8003?", "endpoint": path}
+        return {"error": "API unreachable — is the server running?", "endpoint": path}
     except Exception as e:
         return {"error": str(e), "endpoint": path}
 
@@ -352,21 +352,13 @@ st.sidebar.markdown("**Case Study 2 + 3 + 4**")
 st.sidebar.divider()
 
 _api_ok = api_available()
+_cs4_ok = _api_ok  # CS4 routes are served from the same app
 st.sidebar.markdown(
     f"**Backend:** {'🟢 Connected' if _api_ok else '🔴 Offline'} "
     f"(`{API_BASE}`)"
 )
 if not _api_ok:
-    st.sidebar.caption("Start CS3: `poetry run uvicorn app.main:app --reload`")
-
-_cs4_ok = cs4_api_available()
-_cs4_status = "🟢 Connected" if _cs4_ok else "🔴 Offline"
-st.sidebar.markdown(
-    f"**CS4 RAG:** {_cs4_status} "
-    f"(`{CS4_API_BASE}`)"
-)
-if not _cs4_ok:
-    st.sidebar.caption("Start CS4: `poetry run uvicorn cs4_api:app --reload --port 8003`")
+    st.sidebar.caption("Start server: `poetry run uvicorn app.main:app --reload`")
 else:
     # Improvement 5: Show health check in sidebar (cached to avoid slow Redis timeout)
     @st.cache_data(ttl=30)
@@ -1770,7 +1762,7 @@ elif page == "─── CS4: RAG & Search ───":
     st.divider()
     st.info(
         "**Quick Start:**\n\n"
-        "1. Start the CS4 API: `poetry run uvicorn cs4_api:app --reload --port 8003`\n"
+        "1. Start the CS4 API: `poetry run uvicorn app.main:app --reload`\n"
         "2. Go to **⚙️ RAG Settings** → Index evidence for each company\n"
         "3. Use **🔎 Evidence Search** to verify indexing\n"
         "4. Generate justifications and IC packages!"
@@ -1788,7 +1780,7 @@ elif page == "🔎 Evidence Search":
     if not _cs4_ok:
         st.error(
             "🔴 **CS4 RAG API is offline.** Start it with:\n\n"
-            "`poetry run uvicorn cs4_api:app --reload --port 8003`"
+            "`poetry run uvicorn app.main:app --reload`"
         )
         st.stop()
 
@@ -1930,7 +1922,7 @@ elif page == "📋 Score Justification":
     if not _cs4_ok:
         st.error(
             "🔴 **CS4 RAG API is offline.** Start it with:\n\n"
-            "`poetry run uvicorn cs4_api:app --reload --port 8003`"
+            "`poetry run uvicorn app.main:app --reload`"
         )
         st.stop()
 
@@ -2048,7 +2040,7 @@ elif page == "📑 IC Meeting Prep":
     if not _cs4_ok:
         st.error(
             "🔴 **CS4 RAG API is offline.** Start it with:\n\n"
-            "`poetry run uvicorn cs4_api:app --reload --port 8003`"
+            "`poetry run uvicorn app.main:app --reload`"
         )
         st.stop()
 
@@ -2192,7 +2184,7 @@ elif page == "📝 Analyst Notes":
     if not _cs4_ok:
         st.error(
             "🔴 **CS4 RAG API is offline.** Start it with:\n\n"
-            "`poetry run uvicorn cs4_api:app --reload --port 8003`"
+            "`poetry run uvicorn app.main:app --reload`"
         )
         st.stop()
 
@@ -2427,7 +2419,7 @@ elif page == "⚙️ RAG Settings":
     if not _cs4_ok:
         st.error(
             "🔴 **CS4 RAG API is offline.** Start it with:\n\n"
-            "`poetry run uvicorn cs4_api:app --reload --port 8003`"
+            "`poetry run uvicorn app.main:app --reload`"
         )
         st.stop()
 

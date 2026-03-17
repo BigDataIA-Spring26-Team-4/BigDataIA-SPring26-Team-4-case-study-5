@@ -23,16 +23,16 @@ from typing import List, Optional
 
 import structlog
 
-from src.config import CS4Settings, get_cs4_settings
-from src.services.integration.cs3_client import (
+from app.config import CS4Settings, get_cs4_settings
+from app.services.integration.cs3_client import (
     CS3Client,
     Dimension,
     DimensionScore,
     RubricCriteria,
     ScoreLevel,
 )
-from src.services.retrieval.hybrid import HybridRetriever, RetrievedDocument
-from src.services.llm.router import ModelRouter, TaskType
+from app.services.retrieval.hybrid import HybridRetriever, RetrievedDocument
+from app.services.llm.router import ModelRouter, TaskType
 
 logger = structlog.get_logger()
 

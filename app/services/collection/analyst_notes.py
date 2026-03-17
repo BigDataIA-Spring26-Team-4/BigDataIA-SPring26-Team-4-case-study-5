@@ -22,7 +22,7 @@ from typing import Dict, List, Optional
 
 import structlog
 
-from src.services.retrieval.hybrid import HybridRetriever
+from app.services.retrieval.hybrid import HybridRetriever
 
 logger = structlog.get_logger()
 

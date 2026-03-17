@@ -20,9 +20,9 @@ from typing import Any, Dict, List, Optional
 
 import structlog
 
-from src.config import CS4Settings, get_cs4_settings
-from src.services.llm.router import ModelRouter, TaskType
-from src.services.search.vector_store import SearchResult, VectorStore
+from app.config import CS4Settings, get_cs4_settings
+from app.services.llm.router import ModelRouter, TaskType
+from app.services.search.vector_store import SearchResult, VectorStore
 
 logger = structlog.get_logger()
 

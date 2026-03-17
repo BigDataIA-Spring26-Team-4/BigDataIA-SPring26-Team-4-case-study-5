@@ -22,14 +22,14 @@ from typing import Dict, List, Optional
 
 import structlog
 
-from src.config import CS4Settings, get_cs4_settings
-from src.services.integration.cs1_client import CS1Client, Company
-from src.services.integration.cs3_client import (
+from app.config import CS4Settings, get_cs4_settings
+from app.services.integration.cs1_client import CS1Client, Company
+from app.services.integration.cs3_client import (
     CS3Client,
     CompanyAssessment,
     Dimension,
 )
-from src.services.justification.generator import (
+from app.services.justification.generator import (
     JustificationGenerator,
     ScoreJustification,
 )

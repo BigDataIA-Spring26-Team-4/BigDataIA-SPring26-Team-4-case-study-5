@@ -16,6 +16,21 @@ from app.routers import health, companies, assessments, scores, industries, conf
 # CS2: Evidence Collection routers
 from app.routers import documents, signals, pipeline
 from app.routers.signals import evidence_router
+# CS4: RAG & Search routers
+from app.routers import search, justification
+
+# CS4: RAG infrastructure imports
+from app.config import get_cs4_settings
+from app.services.integration.cs1_client import CS1Client
+from app.services.integration.cs2_client import CS2Client
+from app.services.integration.cs3_client import CS3Client
+from app.services.llm.router import ModelRouter
+from app.services.search.vector_store import VectorStore
+from app.services.retrieval.hybrid import HybridRetriever
+from app.services.retrieval.dimension_mapper import DimensionMapper
+from app.services.justification.generator import JustificationGenerator
+from app.services.workflows.ic_prep import ICPrepWorkflow
+from app.services.collection.analyst_notes import AnalystNotesCollector
 
 # Setup logging
 setup_logging()
@@ -26,7 +41,7 @@ log = structlog.get_logger(__name__)
 async def lifespan(app: FastAPI):
     """
     Application lifespan events.
-    Handles startup and shutdown tasks.
+    Handles startup and shutdown tasks including CS4 RAG infrastructure.
     """
     # Startup
     log.info(
@@ -35,7 +50,7 @@ async def lifespan(app: FastAPI):
         version=settings.APP_VERSION,
         debug=settings.DEBUG
     )
-    
+
     # Log configuration (without sensitive data)
     log.info(
         "configuration_loaded",
@@ -44,10 +59,59 @@ async def lifespan(app: FastAPI):
         redis_enabled=settings.REDIS_ENABLED,
         s3_enabled=settings.S3_ENABLED,
     )
-    
+
+    # CS4: Initialize RAG infrastructure
+    cs4_settings = get_cs4_settings()
+
+    log.info(
+        "cs4_startup",
+        llm_configured=cs4_settings.is_llm_configured,
+        embedding_model=cs4_settings.embedding_model,
+        chroma_dir=cs4_settings.chroma_persist_dir,
+        cs3_api=cs4_settings.cs3_api_url,
+    )
+
+    # Integration clients
+    cs1 = CS1Client(base_url=cs4_settings.cs3_api_url)
+    cs2 = CS2Client(base_url=cs4_settings.cs3_api_url)
+    cs3 = CS3Client(base_url=cs4_settings.cs3_api_url)
+
+    # RAG infrastructure
+    llm_router = ModelRouter(cs4_settings)
+    vector_store = VectorStore(cs4_settings)
+    retriever = HybridRetriever(cs4_settings, vector_store)
+    mapper = DimensionMapper()
+
+    # PE workflows
+    generator = JustificationGenerator(
+        cs3=cs3, retriever=retriever, router=llm_router, settings=cs4_settings,
+    )
+    ic_workflow = ICPrepWorkflow(
+        cs1=cs1, cs3=cs3, generator=generator, settings=cs4_settings,
+    )
+    collector = AnalystNotesCollector(retriever)
+
+    # Store in app.state for router access
+    app.state.cs4_settings = cs4_settings
+    app.state.cs1 = cs1
+    app.state.cs2 = cs2
+    app.state.cs3 = cs3
+    app.state.router = llm_router
+    app.state.vector_store = vector_store
+    app.state.retriever = retriever
+    app.state.mapper = mapper
+    app.state.generator = generator
+    app.state.ic_workflow = ic_workflow
+    app.state.collector = collector
+
+    log.info("cs4_ready", providers=cs4_settings.provider_summary)
+
     yield
-    
-    # Shutdown
+
+    # Shutdown — close CS4 HTTP clients
+    await cs1.close()
+    await cs2.close()
+    await cs3.close()
     log.info("application_shutdown")
 
 
@@ -165,6 +229,10 @@ app.include_router(evidence_router)
 # Pipeline execution (CS2 + CS3 evidence collection, scoring, weight config)
 app.include_router(pipeline.router)
 
+# CS4: RAG & Search routers
+app.include_router(search.router)
+app.include_router(justification.router)
+
 
 # ============================================================================
 # Root endpoint
@@ -178,5 +246,13 @@ async def root():
         "version": settings.APP_VERSION,
         "status": "running",
         "docs": "/docs",
-        "health": "/health"
+        "health": "/health",
+        "endpoints": {
+            "search": "/api/v1/search",
+            "index": "/api/v1/index",
+            "justification": "/api/v1/justification/{company_id}/{dimension}",
+            "ic_prep": "/api/v1/ic-prep/{company_id}",
+            "analyst_notes": "/api/v1/analyst-notes/{company_id}",
+            "llm_status": "/api/v1/llm/status",
+        },
     }
