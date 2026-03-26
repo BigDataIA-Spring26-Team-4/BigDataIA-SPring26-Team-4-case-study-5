@@ -15,7 +15,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
 from typing import Any, Dict, List, Optional
-
+import asyncio
 import httpx
 import structlog
 
@@ -678,6 +678,39 @@ class CS2Client:
             ))
 
         return evidence
+    def get_evidence_for_cs5(self, company_id: str, dimension: str = "all", limit: int = 10):
+        """
+    `CS5-compatible SYNC wrapper for async get_evidence().
+    `   """
+
+        dimension_map = {
+            "all": None,
+            "data_infrastructure": [SignalCategory.DIGITAL_PRESENCE],
+            "talent": [SignalCategory.TECHNOLOGY_HIRING],
+            "leadership": [SignalCategory.LEADERSHIP_SIGNALS],
+            "governance": [SignalCategory.GOVERNANCE_SIGNALS],
+            "innovation": [SignalCategory.INNOVATION_ACTIVITY],
+            "culture": [SignalCategory.CULTURE_SIGNALS],
+        }
+
+        signal_categories = dimension_map.get(dimension, None)
+
+        async def _fetch():
+            return await self.get_evidence(
+                company_id=company_id,
+                source_types=None,
+                signal_categories=signal_categories,
+                min_confidence=0.0,
+            )
+
+        results = asyncio.run(_fetch())
+
+        if isinstance(results, list):
+            return results[:limit]
+
+        return results
+    
+
 
     # ── Helpers ──────────────────────────────────────────────────
 

@@ -27,6 +27,7 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 import requests
+from src.dashboard.cs5_dashboard import render_cs5_dashboard
 
 # ── Configuration ────────────────────────────────────────────────
 
@@ -394,6 +395,7 @@ page = st.sidebar.radio(
         "📑 IC Meeting Prep",
         "📝 Analyst Notes",
         "⚙️ RAG Settings",
+        "🤖 CS5 Agentic Due Diligence",
     ],
 )
 
@@ -856,6 +858,8 @@ elif page == "📡 CS2 Evidence Dashboard":
 # ══════════════════════════════════════════════════════════════════
 # PAGE: Signal Weight Configurator
 # ══════════════════════════════════════════════════════════════════
+elif page == "🤖 CS5 Agentic Due Diligence":
+    render_cs5_dashboard()
 
 elif page == "⚖️ Signal Weight Configurator":
     st.title("⚖️ CS2 Signal Weight Configurator")
