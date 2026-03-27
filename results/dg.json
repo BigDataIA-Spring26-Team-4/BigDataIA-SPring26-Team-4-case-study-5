@@ -19,14 +19,14 @@
     "use_case_portfolio": 51.77,
     "culture": 40.43
   },
-  "evidence_count": 83,
+  "evidence_count": 86,
   "cv_penalty": 0.9362,
   "talent_risk_adj": 0.9925,
   "vr_contribution": 20.74,
   "hr_contribution": 23.66,
   "synergy_contribution": 2.34,
   "document_count": 25,
-  "signal_count": 58,
+  "signal_count": 61,
   "cs2_signals": {
     "technology_hiring_score": 0.0,
     "innovation_activity_score": 0.0,

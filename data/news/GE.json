@@ -1,5 +1,17 @@
 [
   {
+    "title": "Palantir and GE Aerospace Are Working Together on Military Aircraft. Is PLTR or GE Stock a Better Buy Here?",
+    "source": "Barchart",
+    "url": "https://www.barchart.com/story/news/773266/palantir-and-ge-aerospace-are-working-together-on-military-aircraft-is-pltr-or-ge-stock-a-better-buy-here",
+    "published_date": "2026-03-16",
+    "snippet": "Palantir offers higher\u2011growth, higher\u2011volatility upside as an AI defense software pure play, while GE Aerospace provides steadier, cash\u2011rich exposure to aircraft and engine demand; which is \u201cbetter\u201d depends on whether you prioritize aggressive capita...",
+    "is_ai_related": true,
+    "ai_score": 20,
+    "categories": [
+      "ai_strategy"
+    ]
+  },
+  {
     "title": "GE Aerospace And Palantir Technologies Expand Partnership To Transform Military Aircraft Readiness With AI",
     "source": "MarketScreener",
     "url": "https://www.marketscreener.com/news/ge-aerospace-and-palantir-technologies-expand-partnership-to-transform-military-aircraft-readiness-w-ce7e5fddd08ff125",
@@ -37,22 +49,10 @@
     ]
   },
   {
-    "title": "GE Aerospace Readies Takeoff With Its 'AI Wingmate' In Tow",
-    "source": "Investor's Business Daily",
-    "url": "https://www.investors.com/research/ibd-stock-analysis/ge-aerospace-stock-readies-takeoff-ai-wingmate-investing-markets/",
-    "published_date": "2026-02-19",
-    "snippet": "As GE Aerospace taps AI to enhance inspections and predictive maintenance, GE stock just flew into buy range.",
-    "is_ai_related": true,
-    "ai_score": 40,
-    "categories": [
-      "ai_strategy"
-    ]
-  },
-  {
     "title": "Play to Innovate: How Engaging with STEM Toys Prepares Young Minds for Tomorrow",
     "source": "newsroom:GE",
     "url": "https://www.gevernova.com/news",
-    "published_date": "2026-03-13",
+    "published_date": "2026-03-27",
     "snippet": "",
     "is_ai_related": false,
     "ai_score": 0,
@@ -62,7 +62,7 @@
     "title": "Meeting the Moment to Deliver Power the World Can Rely On",
     "source": "newsroom:GE",
     "url": "https://www.gevernova.com/news",
-    "published_date": "2026-03-13",
+    "published_date": "2026-03-27",
     "snippet": "",
     "is_ai_related": false,
     "ai_score": 0,
@@ -72,7 +72,7 @@
     "title": "Get the news in your inbox",
     "source": "newsroom:GE",
     "url": "https://www.geaerospace.com/news",
-    "published_date": "2026-03-13",
+    "published_date": "2026-03-27",
     "snippet": "",
     "is_ai_related": false,
     "ai_score": 0,

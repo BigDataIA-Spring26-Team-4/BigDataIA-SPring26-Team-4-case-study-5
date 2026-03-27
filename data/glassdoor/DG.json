@@ -1,5 +1,16 @@
 [
   {
+    "review_id": "103286824",
+    "rating": 4.0,
+    "title": "Flexible, remote work - Never bored!",
+    "pros": "Able to work remotely. Company cares when you need to take off for anything family related. Always had an interesting day working with other great people.",
+    "cons": "It can be intense and fast paced. Training is adequate but there is a tremendous amount to remember. There is a learning curve.",
+    "advice_to_management": null,
+    "is_current_employee": true,
+    "job_title": "Dispatcher",
+    "review_date": "2026-03-24"
+  },
+  {
     "review_id": "102226423",
     "rating": 5.0,
     "title": "Good Company for Remote Work and Work/Life Balance",
@@ -537,16 +548,5 @@
     "is_current_employee": false,
     "job_title": null,
     "review_date": "2018-01-01"
-  },
-  {
-    "review_id": "17193242",
-    "rating": 1.0,
-    "title": "Run far away from this place",
-    "pros": "There are no pros working for this company.",
-    "cons": "The office is disgusting as is the management. They lie to customers and over charge on all the jobs. They pretend to keep men on site in order to get more money. The benefits are not affordable, you receive vacation time but don't expect to take it. Management with basically take your time off request tear it up and throw it in your face. If your a woman expect to be sexually harresed on a daily basis and the C word is used a lot. The job you are hired for will most likely not be the job you do and there is no training. It's up to you to figure it out. Any positive reviews are written by management pretending to be current employees.",
-    "advice_to_management": null,
-    "is_current_employee": false,
-    "job_title": null,
-    "review_date": "2017-10-05"
   }
 ]
