@@ -13,7 +13,7 @@
 
 | Resource | URL |
 |----------|-----|
-| **Codelabs Document** | *TBD* |
+| **Codelabs Document** | https://codelabs-preview.appspot.com/?file_id=1I8pYNyQaaH2JsOpiktu0ay_Z0XLkRrDdMJXrJ7yYk5Y |
 | **Video Presentation** | *TBD* |
 | **CS1-CS4 API Docs** | http://localhost:8000/docs |
 | **Streamlit Dashboard** | http://localhost:8501 |
