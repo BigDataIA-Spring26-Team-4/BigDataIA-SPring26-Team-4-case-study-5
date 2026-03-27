@@ -58,26 +58,22 @@ def load_portfolio(_fund_id: str) -> pd.DataFrame:
     async def _load():
         return await portfolio_data_service.get_portfolio_view(_fund_id)
 
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    try:
-        portfolio = loop.run_until_complete(_load())
-        return pd.DataFrame([
-            {
-                "ticker": c.ticker,
-                "name": c.name,
-                "sector": c.sector,
-                "org_air": c.org_air,
-                "vr_score": c.vr_score,
-                "hr_score": c.hr_score,
-                "synergy": c.synergy_score,
-                "delta": c.delta_since_entry,
-                "evidence_count": c.evidence_count,
-            }
-            for c in portfolio
-        ])
-    finally:
-        loop.close()
+    loop = asyncio.get_event_loop()
+    portfolio = loop.run_until_complete(_load())
+    return pd.DataFrame([
+        {
+            "ticker": c.ticker,
+            "name": c.name,
+            "sector": c.sector,
+            "org_air": c.org_air,
+            "vr_score": c.vr_score,
+            "hr_score": c.hr_score,
+            "synergy": c.synergy_score,
+            "delta": c.delta_since_entry,
+            "evidence_count": c.evidence_count,
+        }
+        for c in portfolio
+    ])
 
 
 # ── Load data ───────────────────────────────────────────────────
