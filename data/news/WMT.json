@@ -1,12 +1,15 @@
 [
   {
-    "title": "Opt-Out Request Honored",
-    "source": "newsroom:WMT",
-    "url": "https://corporate.walmart.com/newsroom",
-    "published_date": "2026-03-13",
-    "snippet": "",
-    "is_ai_related": false,
-    "ai_score": 0,
-    "categories": []
+    "title": "Walmart AI patents spark customer concerns over dynamic pricing",
+    "source": "Staten Island Advance",
+    "url": "https://www.silive.com/news/2026/03/walmart-ai-patents-spark-customer-concerns-over-dynamic-pricing.html",
+    "published_date": "2026-03-21",
+    "snippet": "The retail giant's new artificial intelligence technology can predict demand and adjust prices on products.",
+    "is_ai_related": true,
+    "ai_score": 40,
+    "categories": [
+      "deployment",
+      "ai_strategy"
+    ]
   }
 ]
