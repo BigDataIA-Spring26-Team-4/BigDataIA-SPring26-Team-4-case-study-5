@@ -1,4 +1,4 @@
-# PE Org-AI-R Platform
+# PE Org-AI-R Platform 
 
 **AI-Readiness Assessment Platform for Private Equity Portfolio Companies**
 
