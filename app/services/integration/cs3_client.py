@@ -166,12 +166,8 @@ class CS3Client:
             # If no local result, build from summary
             return self._parse_summary(ticker, summary)
 
-        except (httpx.HTTPError, httpx.ConnectError) as e:
-            logger.warning("cs3_api_unavailable", ticker=ticker, error=str(e))
-            result = self._load_local_result(ticker)
-            if result:
-                return self._parse_result_json(ticker, result)
-            raise ValueError(f"No scoring data available for '{ticker}'")
+        except Exception as e:
+            raise RuntimeError(f"CS3 service failed: {str(e)}")
 
     async def get_dimension_score(
         self, company_id: str, dimension: Dimension

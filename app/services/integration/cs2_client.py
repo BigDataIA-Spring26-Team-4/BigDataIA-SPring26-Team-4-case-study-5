@@ -18,6 +18,11 @@ from typing import Any, Dict, List, Optional
 import asyncio
 import httpx
 import structlog
+from sympy import limit
+
+from app.models import evidence
+
+# from tests.test_signals import company_id
 
 logger = structlog.get_logger()
 
@@ -161,8 +166,7 @@ class CS2Client:
             logger.info("cs2_ticker_resolved", ticker=ticker, company_id=uuid[:12] + "...")
             return uuid
         except Exception as e:
-            logger.warning("cs2_ticker_resolve_failed", ticker=ticker, error=str(e))
-            return None
+            raise RuntimeError(f"CS2 service failed: {str(e)}")
 
     async def get_evidence(
         self,
@@ -181,8 +185,7 @@ class CS2Client:
         # Resolve ticker → UUID (Snowflake uses UUID, not ticker)
         resolved_id = await self._resolve_company_id(company_id)
         if not resolved_id:
-            logger.warning("cs2_no_company_found", ticker=company_id)
-            return []
+            raise RuntimeError(f"CS2 service failed: company '{company_id}' not found")
 
         evidence_list: List[CS2Evidence] = []
 
@@ -410,9 +413,8 @@ class CS2Client:
 
         try:
             reviews = json.loads(path.read_text())
-        except Exception:
-            return []
-
+        except Exception as e:
+            raise RuntimeError(f"CS2 service failed: {str(e)}")
         evidence = []
         for i, rev in enumerate(reviews[:15]):  # Top 15 reviews
             pros = rev.get("pros", "")
@@ -461,8 +463,8 @@ class CS2Client:
 
         try:
             data = json.loads(path.read_text())
-        except Exception:
-            return []
+        except Exception as e:
+            raise RuntimeError(f"CS2 service failed: {str(e)}")
 
         evidence = []
         members = data.get("members", [])
@@ -581,8 +583,8 @@ class CS2Client:
 
         try:
             articles = json.loads(path.read_text())
-        except Exception:
-            return []
+        except Exception as e:
+            raise RuntimeError(f"CS2 service failed: {str(e)}")
 
         evidence = []
         for i, article in enumerate(articles[:20]):
@@ -630,8 +632,8 @@ class CS2Client:
 
         try:
             jobs = json.loads(path.read_text())
-        except Exception:
-            return []
+        except Exception as e:
+            raise RuntimeError(f"CS2 service failed: {str(e)}")
 
         # Build a single evidence item from all AI jobs
         ai_jobs = [j for j in jobs if j.get("is_ai")]
@@ -678,37 +680,59 @@ class CS2Client:
             ))
 
         return evidence
-    def get_evidence_for_cs5(self, company_id: str, dimension: str = "all", limit: int = 10):
-        """
-    `CS5-compatible SYNC wrapper for async get_evidence().
-    `   """
+    async def get_evidence_for_cs5(
+        self,
+        company_id: str,
+        dimension: str = "all",
+        limit: int = 10,
+    ):
+        evidence = await self.get_evidence(company_id)
 
-        dimension_map = {
-            "all": None,
-            "data_infrastructure": [SignalCategory.DIGITAL_PRESENCE],
-            "talent": [SignalCategory.TECHNOLOGY_HIRING],
-            "leadership": [SignalCategory.LEADERSHIP_SIGNALS],
-            "governance": [SignalCategory.GOVERNANCE_SIGNALS],
-            "innovation": [SignalCategory.INNOVATION_ACTIVITY],
-            "culture": [SignalCategory.CULTURE_SIGNALS],
-        }
+        if dimension and dimension != "all":
+            filtered = []
+            for item in evidence:
+                text = (getattr(item, "content", "") or "").lower()
+                if dimension.replace("_", " ") in text or dimension in text:
+                    filtered.append(item)
+            evidence = filtered
 
-        signal_categories = dimension_map.get(dimension, None)
+        return evidence[:limit] 
 
-        async def _fetch():
-            return await self.get_evidence(
-                company_id=company_id,
-                source_types=None,
-                signal_categories=signal_categories,
-                min_confidence=0.0,
-            )
+    #     dimension_map = {
+    #         "all": None,
+    #         "data_infrastructure": [SignalCategory.DIGITAL_PRESENCE],
+    #         "talent": [SignalCategory.TECHNOLOGY_HIRING],
+    #         "leadership": [SignalCategory.LEADERSHIP_SIGNALS],
+    #         "governance": [SignalCategory.GOVERNANCE_SIGNALS],
+    #         "innovation": [SignalCategory.INNOVATION_ACTIVITY],
+    #         "culture": [SignalCategory.CULTURE_SIGNALS],
+    #     }
 
-        results = asyncio.run(_fetch())
+    #     signal_categories = dimension_map.get(dimension, None)
 
-        if isinstance(results, list):
-            return results[:limit]
+    #     async def _fetch():
+    #         return await self.get_evidence(
+    #             company_id=company_id,
+    #             source_types=None,
+    #             signal_categories=signal_categories,
+    #             min_confidence=0.0,
+    #         )
 
-        return results
+    #     import asyncio
+
+    #     try:
+    #         loop = asyncio.get_running_loop()
+    # # If already in async environment → use await via task
+    #         results = await _fetch()
+    #     except RuntimeError:
+    # # No running loop → safe to use asyncio.run
+    #         results = asyncio.run(_fetch())
+
+    #     if isinstance(results, list):
+    #         return results[:limit]
+
+    #     return results
+
     
 
 
