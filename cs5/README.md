@@ -558,8 +558,8 @@ docker compose -f docker/compose.yaml down
 | Member | Contributions |
 |--------|--------------|
 | **Deep Prajapati** | CS1-CS4 full implementation, CS5 MCP server (6 tools, resources, prompts), LangGraph supervisor + 4 specialist agents, HITL gates, EBITDA calculator, gap analyzer, Fund-AI-R, assessment history, Prometheus metrics, portfolio dashboard, evidence display component, agentic DD exercise, all 4 bonus extensions, 17 integration tests, Docker rebuild + structlog fix |
-| **Tapan Patel** | Airflow DAG design reference, initial Docker setup |
-| **Seamus McAvoy** | CS1 API foundation, initial Snowflake schema, CS5 uv project setup |
+| **Tapan Patel** | Airflow DAG design reference, initial Docker setup, LangGRaph supervisor + specialist agents, config MCP server |
+| **Seamus McAvoy** | CS1 API foundation, initial Snowflake schema, CS5 uv project setup, MCP implementation |
 
 ### AI Tools Used
 
