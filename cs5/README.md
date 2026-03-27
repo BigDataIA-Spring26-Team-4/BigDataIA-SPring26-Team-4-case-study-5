@@ -565,6 +565,6 @@ docker compose -f docker/compose.yaml down
 
 | Tool | Usage |
 |------|-------|
-| **Claude (Anthropic)** | Architecture design, MCP server implementation, LangGraph agent design, debugging, test writing, README generation |
+| **Claude (Anthropic)** | debugging, test writing, README generation |
 | **Claude Desktop** | MCP tool testing, IC meeting prep workflow validation |
 | **GitHub Copilot** | Inline code suggestions |
