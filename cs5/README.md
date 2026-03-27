@@ -16,7 +16,7 @@
 | **Codelabs Document** | https://codelabs-preview.appspot.com/?file_id=1I8pYNyQaaH2JsOpiktu0ay_Z0XLkRrDdMJXrJ7yYk5Y |
 | **Video Presentation** | *TBD* |
 | **CS1-CS4 API Docs** | http://localhost:8000/docs |
-| **Streamlit Dashboard** | http://localhost:8501 |
+| **Streamlit Dashboard** | http://44.208.164.115:8501|
 
 ---
 
